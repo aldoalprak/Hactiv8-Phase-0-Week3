@@ -15,66 +15,63 @@ function dataHandling2(input) {
   console.log(input);
   switch(splitTanggal[1]) {
     case '01': {
-      console.log('Januari');
+      splitTanggal[1]=('Januari');
       break;
     }
      case '02': {
-      console.log('Febuari');
+      splitTanggal[1]=('Febuari');
       break;
     }
     case '03': {
-      console.log('Maret');
+      splitTanggal[1]=('Maret');
       break;
     }
     case '04': {
-      console.log('April');
+      splitTanggal[1]=('April');
       break;
     }
     case '05': {
-      console.log('Mei');
+      splitTanggal[1]=('Mei');
       break;
     }
     case '06': {
-      console.log('Junii');
+      splitTanggal[1]=('Junii');
       break;
     }
     case '07': {
-      console.log('Juli');
+      splitTanggal[1]=('Juli');
       break;
     }
     case '08': {
-      console.log('Agustus');
+      splitTanggal[1]=('Agustus');
       break;
     }
     case '09': {
-      console.log('September');
+      splitTanggal[1]=('September');
       break;
     }
     case '10': {
-      console.log('Oktober');
+      splitTanggal[1]=('Oktober');
       break;
     }
     case '11': {
-      console.log('November');
+      splitTanggal[1]=('November');
       break;
     }
     case '12': {
-      console.log('Desember');
+      splitTanggal[1]=('Desember');
       break;
     }
-    default: console.log('salah bulan');
+    default: splitTanggal[1]=('salah bulan');
   } 
+  console.log(splitTanggal[1]);
   
-var splitInteger=[];
-   splitInteger.push(parseInt(splitTanggal[0]));
-   splitInteger.push(parseInt(splitTanggal[1]));
-   splitInteger.push(parseInt(splitTanggal[2]));
- console.log(splitInteger); 
- var sort=splitTanggal.sort(function(a,b){return(b-a)});
+ var splitTanggal1=input[3].split('/');
+ var sort=splitTanggal1.sort(function(a,b){return(b-a)});
  console.log(sort);
- var join=splitTanggal.join('-');
-  console.log(join);
-  console.log(input[1].slice(0,14))
+ var join=input[3].split('/').join('-');
+ console.log(join);
+ console.log(input[1].slice(0,14))
  
   
 }
@@ -82,3 +79,11 @@ var splitInteger=[];
 var input=["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 dataHandling2(input);
+
+
+/*
+var splitInteger=[];
+   splitInteger.push(parseInt(splitTanggal[0]));
+   splitInteger.push(parseInt(splitTanggal[1]));
+   splitInteger.push(parseInt(splitTanggal[2]));
+ console.log(splitInteger); */
