@@ -20,7 +20,8 @@ function angkaPalindrome(num) {
   }
     
   }
-  return(store1);
+  var stringToAngka=parseInt(store1);
+  return(stringToAngka);
   
 }
 
